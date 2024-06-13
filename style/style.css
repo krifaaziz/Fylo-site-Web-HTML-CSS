@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header,
+footer {
+  padding: 50px;
+}
+header {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .links {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+header .links a {
+  display: block;
+  text-decoration: none;
+  color: #605d6d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+/*SECTION1*/
+main section1 {
+  display: flex;
+  padding: 50px;
+}
+main section1 img {
+  flex: 1;
+  width: 50%;
+  height: 50%;
+}
+main section1 .text {
+  flex: 1;
+  padding-top: 120px;
+}
+.title {
+  color: #08003c;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #48445b;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+main section1 .text > div {
+  display: flex;
+  align-items: center;
+}
+main section1 .text div input {
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+}
+main section1 .text a {
+  display: block;
+  width: 20%;
+  color: white;
+  background-color: #2d66fb;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+main section1 .text a:hover {
+  background-color: #5b8aff;
+  transition: 0.5s;
+}
+/*FIN SECTION1*/
+main #background {
+  width: 100%;
+  transform: translateY(5px);
+}
+/*SECTION2*/
+main section2 {
+  background-color: #f8f8fe;
+  display: flex;
+  padding: 50px;
+}
+main section2 .box {
+  width: 60%;
+}
+main section2 > img {
+  width: 40%;
+}
+main section2 .box .description {
+  font-size: 16px;
+}
+main section2 .box .how-fylo-work a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #76a09c;
+}
+main section2 .box .how-fylo-work {
+  border-bottom: 1px #76a09c solid;
+  display: inline-block;
+}
+main section2 .box .how-fylo-work:hover {
+  border-color: #34c89e;
+}
+main section2 .box .how-fylo-work a:hover {
+  color: #34c89e;
+}
+main section2 .box .child-box {
+  margin-top: 20px;
+  width: 38%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px #d5d5da;
+}
+main section2 .box .child-box .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main section2 .box .child-box > p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+main section2 .box .child-box .user img {
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+main section2 .box .child-box .user .user-name p:nth-of-type(1) {
+  font-weight: bold;
+}
+main section2 .box .child-box .user .user-name p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+/*FIN SECTION2*/
+@media (max-width: 1286px) {
+  main section1 .text {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 1116px) {
+  main section1 .text .title {
+    font-size: 30px;
+  }
+  main section1 .text .description {
+    font-size: 13px;
+  }
+  main section2 .box .description {
+    font-size: 13px;
+  }
+  main section2 .box .how-fylo-work a {
+    font-size: 16px;
+  }
+  main section2 .box .child-box > p {
+    font-size: 13px;
+  }
+  main section2 .box .child-box .user img {
+    width: 20%;
+  }
+  main section2 .box .child-box .user .user-name p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 875px) {
+  main section1 .text .title {
+    font-size: 20px;
+  }
+  main section1 .text .description {
+    font-size: 13px;
+  }
+  main section1 .text a {
+    font-size: 15px;
+  }
+  header .links {
+    width: 30%;
+  }
+  header .links a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 875px) {
+  main section1 .text input {
+    width: 40%;
+  }
+  main section1 .text a {
+    width: 20%;
+  }
+  main section1 .text > div > a {
+    font-size: 12px;
+    padding: 13px;
+  }
+}
+@media (max-width: 685px) {
+  main section1 img {
+    height: 250px;
+  }
+}
+@media (max-width: 642px) {
+  main section1 .text > div > a {
+    padding: 6px;
+  }
+  header .links {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  header > img {
+    width: 25%;
+  }
+  main section1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main section1 img {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  main .text {
+    text-align: center;
+  }
+  main section1 .text .title {
+    font-size: 30px;
+  }
+  main section1 .text .description {
+    font-size: 18px;
+  }
+  main section1 .text > div {
+    display: block;
+  }
+  main section1 .text > div > a {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px;
+  }
+  main section1 .text > div > input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  header,
+  main,
+  footer {
+    padding: 30px;
+  }
+  main section1 .text .title {
+    font-size: 20px;
+  }
+  main section1 .text .description {
+    font-size: 15px;
+  }
+  main section1 .text > div > a {
+    font-size: 15px;
+  }
+  header .links {
+    width: 70%;
+  }
+}
+@media (max-width: 300px) {
+  main section1 .text .title {
+    font-size: 15px;
+  }
+  main section1 .text .description {
+    font-size: 10px;
+  }
+  main section1 .text > div > a {
+    font-size: 10px;
+  }
+  header .links {
+    width: 60%;
+  }
+  header .links a {
+    font-size: 10px;
+  }
+  header,
+  main,
+  footer {
+    padding: 30px;
+  }
+}
