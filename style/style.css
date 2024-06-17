@@ -248,6 +248,11 @@ main section2 .box .child-box .user .user-name p {
   color: rgb(169, 168, 168);
   margin-bottom: 10px;
 }
+.footer2 .social-links .menu1 a:hover,
+.footer2 .social-links .menu2 a:hover {
+  text-decoration: underline;
+  transform: 0.3s;
+}
 .footer2 .social-links .social {
   color: white;
   font-size: 15px;
@@ -259,6 +264,10 @@ main section2 .box .child-box .user .user-name p {
   padding: 10px;
   border-radius: 50%;
   margin-right: 15px;
+  cursor: pointer;
+}
+.footer2 .social-links .social i:hover {
+  opacity: 0.8;
 }
 /*FIN FOOTER2*/
 /*RESPONSIVE*/
